@@ -1,7 +1,27 @@
-<%= form_for Task.new do |f| %>
-    <%= f.label :description, "Description: " %>
-    <%= f.text_field :description %>
-    <%= f.label :status, 'Status' %>  
-    <%= f.check_box :status %><br><br>
-    <%= f.submit 'Criar' %>
-<% end %>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="navbarContainer">
+        <div class = "top"> 
+            <h1> Página para criar sua lista</h1>
+        </div>
+         <div class = "top2">
+            <%= form_for Task.new do |f| %>
+                <%= f.label :description, "Description: " %>
+                <%= f.text_field :description %><br><br>
+                <%= f.label :status, 'Status' %>  
+                <%= f.check_box :status %><br><br>
+                <%= f.submit 'Criar' %>
+            <% end %>
+         </div>
+
+         <div class = "top3">
+            <em> Data de hoje <%= Date.today %></em>
+         </div>
+    </div>
+</body>
+</html>
