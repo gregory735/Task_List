@@ -4275,3 +4275,520 @@ Processing by HomeController#welcome as HTML
 Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms | Allocations: 4751)
 
 
+Started GET "/tasks/new" for ::1 at 2020-07-18 23:10:56 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 4668)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 21.6ms | ActiveRecord: 0.7ms | Allocations: 11441)
+
+
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:11:01 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3120)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3642)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class = "top"> 
+    <h1> Edite seu item da lista </h1>
+</div>
+
+<div class = "top2">
+    <%= form_for @task do |f| %>
+        <%= f.label :description, "Description: " %>
+        <%= f.text_field :description %><br><br><br>
+        <%= f.label :status, 'Status' %>  
+        <%= f.check_box :status %><br><br>
+        <%= f.submit 'Editar' %>
+    <% end %>
+</div>
+<%= link_to '<button type="button">Voltar</button>'.html_safe, 'root %>
+
+<div class = "top3">
+    <em> Data de hoje <%= Date.today %></em>
+</div>
+
+
+):
+1:    <div class = "top"> 
+2:        <h1> Edite seu item da lista </h1>
+3:    </div>
+4:    
+5:    <div class = "top2">
+6:        <%= form_for @task do |f| %>
+7:            <%= f.label :description, "Description: " %>
+8:            <%= f.text_field :description %><br><br><br>
+9:            <%= f.label :status, 'Status' %>  
+10:            <%= f.check_box :status %><br><br>
+11:            <%= f.submit 'Editar' %>
+12:        <% end %>
+13:    </div>
+14:    <%= link_to '<button type="button">Voltar</button>'.html_safe, 'root %>
+15:    
+16:    <div class = "top3">
+17:        <em> Data de hoje <%= Date.today %></em>
+18:    </div>
+  
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:11:24 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1136)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2264)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class = "top"> 
+    <h1> Edite seu item da lista </h1>
+</div>
+
+<div class = "top2">
+    <%= form_for @task do |f| %>
+        <%= f.label :description, "Description: " %>
+        <%= f.text_field :description %><br><br><br>
+        <%= f.label :status, 'Status' %>  
+        <%= f.check_box :status %><br><br>
+        <%= f.submit 'Editar' %>
+    <% end %>
+</div>
+<%= link_to '<button type="button">Voltar</button>'.html_safe, 'root_path %>
+
+<div class = "top3">
+    <em> Data de hoje <%= Date.today %></em>
+</div>
+
+
+):
+1:    <div class = "top"> 
+2:        <h1> Edite seu item da lista </h1>
+3:    </div>
+4:    
+5:    <div class = "top2">
+6:        <%= form_for @task do |f| %>
+7:            <%= f.label :description, "Description: " %>
+8:            <%= f.text_field :description %><br><br><br>
+9:            <%= f.label :status, 'Status' %>  
+10:            <%= f.check_box :status %><br><br>
+11:            <%= f.submit 'Editar' %>
+12:        <% end %>
+13:    </div>
+14:    <%= link_to '<button type="button">Voltar</button>'.html_safe, 'root_path %>
+15:    
+16:    <div class = "top3">
+17:        <em> Data de hoje <%= Date.today %></em>
+18:    </div>
+  
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+app/views/tasks/edit.html.erb:16: syntax error, unexpected '<', expecting ')'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected '<'
+app/views/tasks/edit.html.erb:17: syntax error, unexpected local variable or method, expecting `do' or '{' or '('
+app/views/tasks/edit.html.erb:18: unknown regexp options - dv
+app/views/tasks/edit.html.erb:22: unterminated string meets end of file
+app/views/tasks/edit.html.erb:22: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:11:40 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1104)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2216)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: </div>
+    4: 
+    5: <div class = "top2">
+    6:     <%= form_for @task do |f| %>
+    7:         <%= f.label :description, "Description: " %>
+    8:         <%= f.text_field :description %><br><br><br>
+    9:         <%= f.label :status, 'Status' %>  
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:12:05 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1098)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2210)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: </div>
+    4: 
+    5: <div class = "top2">
+    6:     <%= form_for @task do |f| %>
+    7:         <%= f.label :description, "Description: " %>
+    8:         <%= f.text_field :description %><br><br><br>
+    9:         <%= f.label :status, 'Status' %>  
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:12:25 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1096)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2206)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: </div>
+    4: 
+    5: <div class = "top2">
+    6:     <%= form_for @task do |f| %>
+    7:         <%= f.label :description, "Description: " %>
+    8:         <%= f.text_field :description %><br><br><br>
+    9:         <%= f.label :status, 'Status' %>  
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:12:56 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1096)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2206)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: </div>
+    4: 
+    5: <div class = "top2">
+    6:     <%= form_for @task do |f| %>
+    7:         <%= f.label :description, "Description: " %>
+    8:         <%= f.text_field :description %><br><br><br>
+    9:         <%= f.label :status, 'Status' %>  
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:13:28 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1098)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2208)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: </div>
+    4: 
+    5: <div class = "top2">
+    6:     <%= form_for @task do |f| %>
+    7:         <%= f.label :description, "Description: " %>
+    8:         <%= f.text_field :description %><br><br><br>
+    9:         <%= f.label :status, 'Status' %>  
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:13:37 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1095)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2205)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: </div>
+    4: 
+    5: <div class = "top2">
+    6:     <%= form_for @task do |f| %>
+    7:         <%= f.label :description, "Description: " %>
+    8:         <%= f.text_field :description %><br><br><br>
+    9:         <%= f.label :status, 'Status' %>  
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:13:44 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1079)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2189)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: </div>
+    4: 
+    5: <div class = "top2">
+    6:     <%= form_for @task do |f| %>
+    7:         <%= f.label :description, "Description: " %>
+    8:         <%= f.text_field :description %><br><br><br>
+    9:         <%= f.label :status, 'Status' %>  
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:13:58 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1077)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2187)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: </div>
+    4: 
+    5: <div class = "top2">
+    6:     <%= form_for @task do |f| %>
+    7:         <%= f.label :description, "Description: " %>
+    8:         <%= f.text_field :description %><br><br><br>
+    9:         <%= f.label :status, 'Status' %>  
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:14:47 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1077)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2187)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    3: </div>
+    4: 
+    5: <div class = "top2">
+    6: <%= form_for @task do |f| %>
+    7:     <%= f.label :description, "Description: " %>
+    8:     <%= f.text_field :description %><br><br><br>
+    9:     <%= f.label :status, 'Status' %>  
+  
+app/views/tasks/edit.html.erb:6
+Started GET "/" for ::1 at 2020-07-18 23:15:24 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 10.1ms | Allocations: 4522)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 32.5ms | ActiveRecord: 1.0ms | Allocations: 11631)
+
+
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:15:26 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:15:in `edit'
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1174)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 6385)
+
+
+Started GET "/tasks/11/edit" for ::1 at 2020-07-18 23:15:30 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mTask Load (1.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:15:in `edit'
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 424)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 21.6ms | ActiveRecord: 1.6ms | Allocations: 4649)
+
+
+Started GET "/tasks/13/edit" for ::1 at 2020-07-18 23:15:33 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:15:in `edit'
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 423)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.4ms | Allocations: 4649)
+
+
+Started GET "/tasks/14/edit" for ::1 at 2020-07-18 23:15:36 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:15:in `edit'
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 423)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 4644)
+
+
+Started GET "/" for ::1 at 2020-07-18 23:15:54 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1264)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 5870)
+
+
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:15:55 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:15:in `edit'
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 687)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5461)
+
+
+Started GET "/" for ::1 at 2020-07-18 23:15:57 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1053)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms | Allocations: 4750)
+
+
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:16:13 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:15:in `edit'
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.5ms | Allocations: 682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 5798)
+
+
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:16:23 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:15:in `edit'
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 680)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.1ms | Allocations: 5788)
+
+
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 23:16:41 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:15:in `edit'
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 5805)
+
+
+Started GET "/" for ::1 at 2020-07-18 23:16:43 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1261)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 5517)
+
+
+Started GET "/" for ::1 at 2020-07-18 23:16:45 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1047)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 4743)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 23:16:49 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 636)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4450)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 23:17:02 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 652)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5254)
+
+
+Started GET "/" for ::1 at 2020-07-18 23:17:05 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1262)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.1ms | Allocations: 5522)
+
+
