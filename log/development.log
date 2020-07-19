@@ -3422,3 +3422,856 @@ Processing by HomeController#welcome as HTML
 Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 4991)
 
 
+Started GET "/" for ::1 at 2020-07-18 22:39:10 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 11.3ms | Allocations: 5160)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 35.6ms | ActiveRecord: 1.5ms | Allocations: 12275)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:39:13 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1375)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.1ms | Allocations: 5087)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:39:14 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1365)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.1ms | Allocations: 5096)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:39:14 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1365)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 5056)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:40:44 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 192.6ms | Allocations: 129867)
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.1ms | Allocations: 131036)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_post_path' for #<#<Class:0x00007f759007e998>:0x00007f759007d138>
+Did you mean?  new_task_path):
+    15: </div>
+    16: 
+    17: <div class = "top2">
+    18:     <%= link_to '<button type="button">ovo item</button>'.html_safe, new_post_path %>
+    19: </div>
+    20: 
+    21: <div class = "top3">
+  
+app/views/home/welcome.html.erb:18
+Started GET "/" for ::1 at 2020-07-18 22:40:57 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1585)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.4ms | Allocations: 6257)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:41:04 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1571)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 6171)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:41:05 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1374)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 5072)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:41:06 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 5052)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:41:06 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.5ms | Allocations: 5042)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:41:54 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2759)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.1ms | Allocations: 3910)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007f7590d46a68>::Tasks):
+    15: </div>
+    16: 
+    17: <div class = "top2">
+    18:     <%= link_to '<button type="button">Novo item</button>'.html_safe, Tasks%>
+    19: </div>
+    20: 
+    21: <div class = "top3">
+  
+app/views/home/welcome.html.erb:18
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:42:33 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2990)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 7326)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:42:42 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 621)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5200)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:42:47 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 402)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 4076)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:42:50 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1129)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2128)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class = "top"> 
+    <h1> Bem-vindo ao task list! </h1>
+    <h3>sua lista de tarefas:</h3>
+</div>
+
+<div class = "top2">
+<% @tasks.each do |task| %>
+    <br><%= task.description %>
+    <!-- caminho para editar esse objeto em especifico-->
+    <%= link_to 'Editar', edit_task_path(task) %>
+    <%= link_to 'Apagar', task_path(task), method: :delete,
+        data: {confirm: 'Realmente quer apagar essa tarefa?'} %>
+<% end %>
+<br><br>
+</div>
+
+<div class = "top2">
+    <%= link_to '<button type="button">Novo item</button>'.html_safe, /tasks/new%>
+</div>
+
+<div class = "top3">
+    <em> Data de hoje <%= Date.today %></em>
+</div>
+):
+1:    <div class = "top"> 
+2:        <h1> Bem-vindo ao task list! </h1>
+3:        <h3>sua lista de tarefas:</h3>
+4:    </div>
+5:    
+6:    <div class = "top2">
+7:    <% @tasks.each do |task| %>
+8:        <br><%= task.description %>
+9:        <!-- caminho para editar esse objeto em especifico-->
+10:        <%= link_to 'Editar', edit_task_path(task) %>
+11:        <%= link_to 'Apagar', task_path(task), method: :delete,
+12:            data: {confirm: 'Realmente quer apagar essa tarefa?'} %>
+13:    <% end %>
+14:    <br><br>
+15:    </div>
+16:    
+17:    <div class = "top2">
+18:        <%= link_to '<button type="button">Novo item</button>'.html_safe, /tasks/new%>
+19:    </div>
+20:    
+21:    <div class = "top3">
+22:        <em> Data de hoje <%= Date.today %></em>
+23:    </div>
+  
+app/views/home/welcome.html.erb:18: unknown regexp option - w
+app/views/home/welcome.html.erb:18: unknown regexp option - w
+app/views/home/welcome.html.erb:18: unknown regexp option - w
+app/views/home/welcome.html.erb:18: unknown regexp option - w
+app/views/home/welcome.html.erb:18: unknown regexp option - w
+app/views/home/welcome.html.erb:18: unknown regexp option - w
+Started GET "/" for ::1 at 2020-07-18 22:43:07 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 232.9ms | Allocations: 127931)
+Completed 500 Internal Server Error in 235ms (ActiveRecord: 0.1ms | Allocations: 129094)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks' for #<#<Class:0x00007f75909694b8>:0x00007f75908fbc10>
+Did you mean?  @tasks):
+    15: </div>
+    16: 
+    17: <div class = "top2">
+    18:     <%= link_to '<button type="button">Novo item</button>'.html_safe, localhost:3000/tasks/new %>
+    19: </div>
+    20: 
+    21: <div class = "top3">
+  
+app/views/home/welcome.html.erb:18
+Started GET "/" for ::1 at 2020-07-18 22:43:35 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 209.8ms | Allocations: 127923)
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.4ms | Allocations: 129086)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `tasks' for #<#<Class:0x00007f7590506d30>:0x00007f75905054d0>
+Did you mean?  @tasks):
+    15: </div>
+    16: 
+    17: <div class = "top2">
+    18:     <%= link_to '<button type="button">Novo item</button>'.html_safe, tasks %>
+    19: </div>
+    20: 
+    21: <div class = "top3">
+  
+app/views/home/welcome.html.erb:18
+Started GET "/" for ::1 at 2020-07-18 22:45:43 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 12.7ms | Allocations: 4674)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms | Allocations: 5837)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Task::ActiveRecord_Relation:0x00007f7590f447e8>
+Did you mean?  to_xml):
+    15: </div>
+    16: 
+    17: <div class = "top2">
+    18:     <%= link_to '<button type="button">Novo item</button>'.html_safe, @tasks %>
+    19: </div>
+    20: 
+    21: <div class = "top3">
+  
+app/views/home/welcome.html.erb:18
+Started GET "/" for ::1 at 2020-07-18 22:45:51 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1569)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 6184)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:45:53 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1363)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 5069)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:45:54 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 5046)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:45:55 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 5072)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:45:55 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.3ms | Allocations: 5046)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:45:57 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 5044)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:45:58 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 5036)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:46:19 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1575)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 6185)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:46:20 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1363)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 5065)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:46:23 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 5048)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:46:25 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 5056)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:46:41 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1572)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 6160)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:46:42 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1363)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 5049)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:46:43 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 5044)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:46:44 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.3ms | Allocations: 5050)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:49:36 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 120.4ms | Allocations: 66538)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.3ms | Allocations: 67686)
+
+
+  
+ActionView::Template::Error (undefined method `create_task_path' for #<#<Class:0x00007f75905709b0>:0x00007f759054edb0>):
+    15: </div>
+    16: 
+    17: <div class = "top2">
+    18:     <%= link_to 'Editar', create_task_path() %>
+    19: </div>
+    20: 
+    21: <div class = "top3">
+  
+app/views/home/welcome.html.erb:18
+Started GET "/" for ::1 at 2020-07-18 22:53:20 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1111)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2265)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class = "top"> 
+    <h1> Bem-vindo ao task list! </h1>
+    <h3>sua lista de tarefas:</h3>
+</div>
+
+<div class = "top2">
+<% @tasks.each do |task| %>
+    <br><%= task.description %>
+    <!-- caminho para editar esse objeto em especifico-->
+    <%= link_to 'Editar', edit_task_path(task) %>
+    <%= link_to 'Apagar', task_path(task), method: :delete,
+        data: {confirm: 'Realmente quer apagar essa tarefa?'} %>
+<% end %>
+<br><br>
+</div>
+
+<div class = "top2">
+    <%= button_to "BUTTON: /teste, users_path, :method => "get" %>
+</div>
+
+<div class = "top3">
+    <em> Data de hoje <%= Date.today %></em>
+</div>
+):
+1:    <div class = "top"> 
+2:        <h1> Bem-vindo ao task list! </h1>
+3:        <h3>sua lista de tarefas:</h3>
+4:    </div>
+5:    
+6:    <div class = "top2">
+7:    <% @tasks.each do |task| %>
+8:        <br><%= task.description %>
+9:        <!-- caminho para editar esse objeto em especifico-->
+10:        <%= link_to 'Editar', edit_task_path(task) %>
+11:        <%= link_to 'Apagar', task_path(task), method: :delete,
+12:            data: {confirm: 'Realmente quer apagar essa tarefa?'} %>
+13:    <% end %>
+14:    <br><br>
+15:    </div>
+16:    
+17:    <div class = "top2">
+18:        <%= button_to "BUTTON: /teste, users_path, :method => "get" %>
+19:    </div>
+20:    
+21:    <div class = "top3">
+22:        <em> Data de hoje <%= Date.today %></em>
+23:    </div>
+  
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for ::1 at 2020-07-18 22:53:53 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  Rendered home/welcome.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1109)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2263)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class = "top"> 
+    <h1> Bem-vindo ao task list! </h1>
+    <h3>sua lista de tarefas:</h3>
+</div>
+
+<div class = "top2">
+<% @tasks.each do |task| %>
+    <br><%= task.description %>
+    <!-- caminho para editar esse objeto em especifico-->
+    <%= link_to 'Editar', edit_task_path(task) %>
+    <%= link_to 'Apagar', task_path(task), method: :delete,
+        data: {confirm: 'Realmente quer apagar essa tarefa?'} %>
+<% end %>
+<br><br>
+</div>
+
+<div class = "top2">
+    <%= button_to "BUTTON: teste, users_path, :method => "get" %>
+</div>
+
+<div class = "top3">
+    <em> Data de hoje <%= Date.today %></em>
+</div>
+):
+1:    <div class = "top"> 
+2:        <h1> Bem-vindo ao task list! </h1>
+3:        <h3>sua lista de tarefas:</h3>
+4:    </div>
+5:    
+6:    <div class = "top2">
+7:    <% @tasks.each do |task| %>
+8:        <br><%= task.description %>
+9:        <!-- caminho para editar esse objeto em especifico-->
+10:        <%= link_to 'Editar', edit_task_path(task) %>
+11:        <%= link_to 'Apagar', task_path(task), method: :delete,
+12:            data: {confirm: 'Realmente quer apagar essa tarefa?'} %>
+13:    <% end %>
+14:    <br><br>
+15:    </div>
+16:    
+17:    <div class = "top2">
+18:        <%= button_to "BUTTON: teste, users_path, :method => "get" %>
+19:    </div>
+20:    
+21:    <div class = "top3">
+22:        <em> Data de hoje <%= Date.today %></em>
+23:    </div>
+  
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+app/views/home/welcome.html.erb:18: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:21: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/welcome.html.erb:25: unterminated string meets end of file
+app/views/home/welcome.html.erb:25: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for ::1 at 2020-07-18 22:55:08 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.1ms | Allocations: 6136)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:55:10 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 621)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4885)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:55:47 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1522)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms | Allocations: 6119)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:55:49 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 621)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4871)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:56:12 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1521)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 6127)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:56:14 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1310)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.1ms | Allocations: 5006)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:56:17 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 621)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4863)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:57:20 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 4668)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 24.5ms | ActiveRecord: 0.6ms | Allocations: 11445)
+
+
+Started POST "/tasks" for ::1 at 2020-07-18 22:57:24 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"lc8+VhQA9OKygUAu0b8trwVAp8pOvUi+eHLmfzRigNCQVGRPLDJyzODJHFsYXOErNTm78Yy8G1c71NAfqzh9+Q==", "task"=>{"description"=>"comprar Feijão", "status"=>"0"}, "commit"=>"Criar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+  [1m[36mTask Create (0.8ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "comprar Feijão"], ["status", 0], ["created_at", "2020-07-19 01:57:24.784472"], ["updated_at", "2020-07-19 01:57:24.784472"]]
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 4.7ms | Allocations: 3827)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:57:24 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1663)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 5904)
+
+
+Started DELETE "/tasks/2" for ::1 at 2020-07-18 22:57:27 -0300
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wTyEzrlWP/Tu7HXix3MMhc+sBTLHOpRdQ/H8Vu/GWFbEp97XgWS52rykKZcOkMAB/9UZCQU7x7QAV8o2cJylfw==", "id"=>"2"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:18:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 4.1ms | Allocations: 4096)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:57:27 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1305)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 5014)
+
+
+Started DELETE "/tasks/3" for ::1 at 2020-07-18 22:57:29 -0300
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"42KqcLAwI3EeaAAOTZA8i96fH6bFb5y1D1gWU0kO8Mrm+fBpiAKlX0wgXHuEc/AP7uYDnQduz1xM/iAz1lQN4w==", "id"=>"3"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:18:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 3.6ms | Allocations: 3689)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:57:29 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1219)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms | Allocations: 4910)
+
+
+Started DELETE "/tasks/5" for ::1 at 2020-07-18 22:57:31 -0300
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3z8XO9MvNObGRKsQrfZCiCMkYcpOhZBfWmyShq7PF5DapE0i6x2yyJQM92VkFY4ME1198YyEw7YZyqTmMZXquQ==", "id"=>"5"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:18:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms | Allocations: 3693)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:57:31 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1133)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 4840)
+
+
+Started DELETE "/tasks/10" for ::1 at 2020-07-18 22:57:33 -0300
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+B8SZ46q5S0aEJE/IJhbwRxM1Z7CCL39AA7PXfg/KJH9hEh+tphjA0hYzUrpe5dFLDXJpQAJ7hRDqPk9Z2XVuA==", "id"=>"10"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:18:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms | Allocations: 3669)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:57:33 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1046)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 4737)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:57:35 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 404)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 4081)
+
+
+Started GET "/tasks/9/edit" for ::1 at 2020-07-18 22:57:38 -0300
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:15:in `edit'
+  Rendering tasks/edit.html.erb within layouts/application
+  Rendered tasks/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 654)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 5005)
+
+
+Started PATCH "/tasks/9" for ::1 at 2020-07-18 22:57:43 -0300
+Processing by TasksController#update as HTML
+  Parameters: {"authenticity_token"=>"TVD1TFkzDnEBbw8xpGI8/CLwhCxLgyRJqE89s2lQE03AFFH6EtsNkJfhMM25BIP4QS8BPROoAzN3XcqRht168w==", "task"=>{"description"=>"Comprar macarrão", "status"=>"0"}, "commit"=>"Editar", "id"=>"9"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:12:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:13:in `update'
+  [1m[36mTask Update (0.3ms)[0m  [1m[33mUPDATE "tasks" SET "description" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["description", "Comprar macarrão"], ["updated_at", "2020-07-19 01:57:43.379714"], ["id", 9]]
+  ↳ app/controllers/tasks_controller.rb:13:in `update'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:13:in `update'
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 4.3ms | Allocations: 4292)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:57:43 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1052)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms | Allocations: 4751)
+
+
