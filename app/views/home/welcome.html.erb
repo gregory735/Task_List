@@ -1,33 +1,25 @@
-<html>
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-    <div id="navbarContainer">
-        <div class = "top"> 
-            <h1> Bem-vindo ao task list! </h1>
-            <h3>sua lista de tarefas:</h3>
-        </div>
-         <div class = "top2">
-            <% @tasks.each do |task| %>
-                <br><%= task.description %>
-                <!-- caminho para editar esse objeto em especifico-->
-                <%= link_to 'Editar', edit_task_path(task) %>
-                <%= link_to 'Apagar', task_path(task), method: :delete,
-                    data: {confirm: 'Realmente quer apagar essa tarefa?'} %>
-            <% end %>
-            <br><br>
-         </div>
-            <div class = "top2">
-            <button>
-                <a target = "blank" href='/tasks/new'>Novo Item</a>
-            </button>
-            </div>
-         <div class = "top3">
-            <em> Data de hoje <%= Date.today %></em>
-         </div>
-    </div>
-</body>
-</html>
+<div class = "top"> 
+    <h1> Bem-vindo ao task list! </h1>
+    <h3>sua lista de tarefas:</h3>
+</div>
+
+<div class = "top2">
+<% @tasks.each do |task| %>
+    <br><%= task.description %>
+    <!-- caminho para editar esse objeto em especifico-->
+    <%= link_to 'Editar', edit_task_path(task) %>
+    <%= link_to 'Apagar', task_path(task), method: :delete,
+        data: {confirm: 'Realmente quer apagar essa tarefa?'} %>
+<% end %>
+<br><br>
+</div>
+
+<div class = "top2">
+    <button>
+        <a target = "blank" href='/tasks/new'>Novo Item</a>
+    </button>
+</div>
+
+<div class = "top3">
+    <em> Data de hoje <%= Date.today %></em>
+</div>

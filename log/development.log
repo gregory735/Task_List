@@ -3272,3 +3272,153 @@ Processing by HomeController#welcome as HTML
 Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 4815)
 
 
+Started GET "/" for ::1 at 2020-07-18 22:14:20 -0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 21.0ms | Allocations: 4580)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 56.8ms | ActiveRecord: 1.9ms | Allocations: 11608)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:14:24 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.1ms | Allocations: 4841)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:16:32 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1325)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.3ms | Allocations: 5940)
+
+
+Started DELETE "/tasks/1" for ::1 at 2020-07-18 22:16:36 -0300
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ysy6OoNlkE3uOo86n3dH4fFMdo/24bkT7wYOjjSaWqLPV+Aju1cWY7xy009WlItlwTVqtDTg6vqsoDjuq8Cniw==", "id"=>"1"}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:18:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[36mTask Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:19:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 4.5ms | Allocations: 3485)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:16:36 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1041)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.4ms | Allocations: 4735)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:16:40 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1158)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 5408)
+
+
+Started POST "/tasks" for ::1 at 2020-07-18 22:16:56 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"5fUdKR1fqa4jFQ7FkUnM5JB8PVD9fJtLwjtsgHpi3SvgbkcwJW0vgHFdUrBYqgBgoAUhaz99yKKBnVrg5TggAg==", "task"=>{"description"=>"comprar macarrão", "status"=>"1"}, "commit"=>"Criar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+  [1m[36mTask Create (0.8ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "comprar macarrão"], ["status", 1], ["created_at", "2020-07-19 01:16:56.421995"], ["updated_at", "2020-07-19 01:16:56.421995"]]
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 4.4ms | Allocations: 3759)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:16:56 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1128)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 4834)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:17:01 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 401)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 4085)
+
+
+Started POST "/tasks" for ::1 at 2020-07-18 22:17:07 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"aPL8K5gMcQBC4UxhTC1PtsiNfb1gnLH4NZXhsI1JfZRtaaYyoD73LhCpEBSFzoMy+PRhhqKd4hF2M9fQEhOAvQ==", "task"=>{"description"=>"Comprar leite", "status"=>"0"}, "commit"=>"Criar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+  [1m[36mTask Create (0.2ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Comprar leite"], ["status", 0], ["created_at", "2020-07-19 01:17:07.656796"], ["updated_at", "2020-07-19 01:17:07.656796"]]
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms | Allocations: 3603)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:17:07 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1206)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.3ms | Allocations: 4907)
+
+
+Started GET "/tasks/new" for ::1 at 2020-07-18 22:17:11 -0300
+Processing by TasksController#new as HTML
+  Rendering tasks/new.html.erb within layouts/application
+  Rendered tasks/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 395)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4076)
+
+
+Started POST "/tasks" for ::1 at 2020-07-18 22:17:20 -0300
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"txMl8qgOxORJ0kxv/aeJrS4xWu2m9LjykczI3kAqX/OyiH/rkDxCyhuaEBo0REUpHkhG1mT16xvSav6+33Ci2g==", "task"=>{"description"=>"Comprar Batata", "status"=>"0"}, "commit"=>"Criar"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+  [1m[36mTask Create (1.0ms)[0m  [1m[32mINSERT INTO "tasks" ("description", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Comprar Batata"], ["status", 0], ["created_at", "2020-07-19 01:17:20.144994"], ["updated_at", "2020-07-19 01:17:20.144994"]]
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 4.9ms | Allocations: 3596)
+
+
+Started GET "/" for ::1 at 2020-07-18 22:17:20 -0300
+Processing by HomeController#welcome as HTML
+  Rendering home/welcome.html.erb within layouts/application
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/home/welcome.html.erb:7
+  Rendered home/welcome.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 4991)
+
+
